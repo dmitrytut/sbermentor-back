@@ -18,7 +18,7 @@ export class ChannelMapper implements IMapper<Channel, ChannelDto, ChannelRespon
             startDate: entity.startDate,
             category: entity.category ? entityMapper.toDto(entity.category) : null,
             tags: entity.tags?.map((tag) => entityMapper.toDto(tag)) || [],
-            createdBy: entity.createdBy && userMapper.toDto(entity.createdBy),
+            createdBy: entity.createdBy ? userMapper.toDto(entity.createdBy) : null,
             posts: entity.posts?.map((post) => postMapper.toDto(post)) || [],
             postsCount: entity.posts?.length || 0,
             subscribersCount: 0,

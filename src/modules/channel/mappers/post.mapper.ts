@@ -18,7 +18,7 @@ export class PostMapper implements IMapper<Post, PostDto, PostResponseDto> {
             likesCount: entity.likesCount,
             completed: userId && entity.completedUsers?.some((u) => u.id === userId),
             channel: entity.channel && channelMapper.toDto(entity.channel),
-            createdBy: entity.createdBy && userMapper.toDto(entity.createdBy),
+            createdBy: entity.createdBy ? userMapper.toDto(entity.createdBy) : null,
             tags: entity.tags?.map((tag) => entityMapper.toDto(tag)) || [],
             completedUsers: entity.completedUsers?.map((user) => userMapper.toDto(user)) || [],
         };

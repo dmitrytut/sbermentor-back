@@ -7,6 +7,7 @@ import { Repository } from 'typeorm';
 
 import { Channel } from '../../entity/channel.entity';
 import { ChannelCategory } from '../../entity/channelCategory.entity';
+import { TagDto } from '../tag/dto/tag.dto';
 
 import { ChannelDto } from './dto/channel.dto';
 import { PostDto } from './dto/post.dto';
@@ -61,6 +62,7 @@ export class ChannelService {
                     title,
                     description: channel.description,
                     order: undefined,
+                    tags: channel.tags?.map((tag) => ({ id: tag.id } as TagDto)),
                 };
                 await this.postService.savePost(postData, channel.id, userId);
             }
