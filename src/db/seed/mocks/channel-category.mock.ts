@@ -1,0 +1,81 @@
+import { ChannelCategory } from '../../../entity/channelCategory.entity';
+import { IMock } from '../interface/mock.interface';
+
+export const ChannelCategoryMock: IMock<ChannelCategory> = {
+    order: 1,
+    repository: ChannelCategory,
+    syncData: [
+        {
+            id: 'd384d293-5865-4028-bfa2-7be0b8872e25',
+            title: 'Дизайн и UX',
+            description: 'Дизайн и UX',
+            order: 0,
+            createdAt: undefined,
+            updatedAt: undefined,
+        },
+        {
+            id: '473b1bc3-0833-4f65-9bb1-f8c97aa3dc27',
+            title: 'Аналитика данных',
+            description: 'Аналитика данных',
+            order: 1,
+            createdAt: undefined,
+            updatedAt: undefined,
+        },
+        {
+            id: '7f447966-6d49-4483-be0e-8731c6c94bed',
+            title: 'Программирование',
+            description: 'Программирование',
+            order: 2,
+            createdAt: undefined,
+            updatedAt: undefined,
+        },
+        {
+            id: 'df72f63c-3ab4-47c5-ad9c-ea2d341e7a8d',
+            title: 'Бизнес',
+            description: 'Бизнес',
+            order: 3,
+            createdAt: undefined,
+            updatedAt: undefined,
+        },
+        {
+            id: '5d2ae9a3-9d4a-4a1e-a549-520e4e5e3018',
+            title: 'Экономика и финансы',
+            description: 'Экономика и финансы',
+            order: 4,
+            createdAt: undefined,
+            updatedAt: undefined,
+        },
+        {
+            id: '28a92888-ced1-4afb-91d6-5640bdb29631',
+            title: 'Soft Skills',
+            description: 'Soft Skills',
+            order: 5,
+            createdAt: undefined,
+            updatedAt: undefined,
+        },
+        {
+            id: '402251f4-e3a3-4129-9718-9913b6cb42b6',
+            title: 'Продукт менеджмент',
+            description: 'Продукт менеджмент',
+            order: 6,
+            createdAt: undefined,
+            updatedAt: undefined,
+        },
+        {
+            id: 'aac212a2-5eed-40aa-bf73-82c5aaeaa2cb',
+            title: 'Маркетинг',
+            description: 'Маркетинг',
+            order: 7,
+            createdAt: undefined,
+            updatedAt: undefined,
+        },
+        {
+            id: '9f496279-ca5f-4c98-803b-274aaf973a17',
+            title: 'Критическое и креативное мышление',
+            description: 'Критическое и креативное мышление',
+            order: 8,
+            createdAt: undefined,
+            updatedAt: undefined,
+        },
+    ],
+};
